@@ -1,0 +1,190 @@
+* { margin:0; padding:0; box-sizing:border-box;}
+body {
+    background-color: whitesmoke;
+}
+
+div.part1 {
+    border: 2px solid rgb(219, 216, 216);
+    background-color: white;
+    /*margin-top: 5px;*/
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.HEADING {
+    border: rgb(219, 216, 216);
+    /*margin-top: 15px;*/
+    margin-bottom: 25px;
+    font-size: 50px;
+    /*padding-left: 0px;*/
+    margin-left: 260px;
+}
+
+.breadcrumb {
+    border-top: 2px solid rgb(219, 216, 216);
+    /*padding-left: 25px;*/
+    margin-left: 260px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: large;
+}
+
+.Class {
+    border: 2px solid rgb(219, 216, 216);
+    margin-top: 35px;
+    margin-left: 260px;
+    margin-right: 60px;
+    /*margin-right: 450px;*/
+    /*margin-bottom: 50px;*/
+    padding: 20px;
+    background-color: white;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+
+/*xxxxxxxxxxxxxxxxxxxx Sidebar Styling xxxxxxxxxxxxxxxxxxxx*/
+
+/* User Profile  */
+.user {
+  display: flex;
+}
+
+.sidebar {
+  margin: 0px;
+  padding: 0;
+  width: 260px;
+  background-color: #313131;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  float: left;
+}
+
+/* Sidebar navigation links */
+.sidebar a {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* sidebar navigation link hover effect */
+.sidebar a:hover:not(.active) {
+  color: white;
+}
+
+/* confused what i used this for */
+/*div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}*/
+
+/* Making Sidebar responsive for phones */
+/* Max width */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+  .boxs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Min width */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  #logo {
+    padding-top: 0;
+  }
+}
+
+/* Dropdown container (hidden by default) */
+.dropdown-container {
+  display: none;
+  background-color: #313131;
+  padding-left: 8px;
+}
+
+.sidenav a,
+.dropdown-btn {
+  padding: 6px 8px 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* FontAwesome ">" icon */
+.fa-caret-right {
+  float: right;
+  padding-right: 0px;
+}
+
+.dropdown-btn {
+  color: white;
+}
+
+#main-category {
+  font-size: 15px;
+}
+
+#main-category:hover {
+  background-color: none;
+}
+
+h4 {
+  padding-left: 15px;
+  padding-top: 15px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+/* Main content */
+.main {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}

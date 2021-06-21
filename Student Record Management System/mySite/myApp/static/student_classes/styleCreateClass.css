@@ -1,0 +1,177 @@
+* { margin:0; padding:0; box-sizing:border-box;}
+body {
+    background-color: whitesmoke;
+}
+
+div.part1 {
+    border: 2px solid rgb(219, 216, 216);
+    background-color: white;
+    /*margin-top: 5px;*/
+    margin-left: 260px;
+    margin-right: 50px;
+}
+
+.HEADING {
+    border: rgb(219, 216, 216);
+    /*margin-top: 15px;*/
+    margin-bottom: 25px;
+    font-size: 40px;
+    padding-left: 20px; ;
+}
+
+.breadcrumb {
+    border-top: 2px solid rgb(219, 216, 216);
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: medium;
+}
+
+.Class {
+    border: 2px solid rgb(219, 216, 216);
+    /*margin-top: 35px;*/
+    margin-left: 260px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: white;
+}
+/* side bar style  */
+/*xxxxxxxxxxxxxxxxxxxx Sidebar Styling xxxxxxxxxxxxxxxxxxxx*/
+
+/* User Profile  */
+.user {
+  display: flex;
+}
+  
+.sidebar {
+  margin: 0px;
+  padding: 0;
+  width: 260px;
+  background-color: #313131;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  float: left;
+}
+
+/* Sidebar navigation links */
+.sidebar a {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* sidebar navigation link hover effect */
+.sidebar a:hover:not(.active) {
+  color: white;
+}
+
+/* confused what i used this for */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* Making Sidebar responsive for phones */
+/* Max width */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+  .boxs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Min width */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  #logo {
+    padding-top: 0;
+  }
+}
+
+/* Dropdown container (hidden by default) */
+.dropdown-container {
+  display: none;
+  background-color: #313131;
+  padding-left: 8px;
+}
+
+.sidenav a,
+.dropdown-btn {
+  padding: 6px 8px 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* FontAwesome ">" icon */
+.fa-caret-right {
+  float: right;
+  padding-right: 0px;
+}
+
+.dropdown-btn {
+  color: white;
+}
+
+#main-category {
+  font-size: 15px;
+}
+
+#main-category:hover {
+  background-color: none;
+}
+
+#user-img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+  /*xxxxxxxxxxxxxxxxxxxx ENDS HERE... xxxxxxxxxxxxxxxxxxxx*/
+  
+  /*===== Sidebar top heading =====*/
+  /* Main Category */
+  /* Apperance */
+h4 {
+  padding-left: 15px;
+  padding-top: 15px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+  /* Main content */
+.main {
+  margin-left: 250px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}

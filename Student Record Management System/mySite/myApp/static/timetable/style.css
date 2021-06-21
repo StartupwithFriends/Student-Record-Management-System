@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+/* Time Table heading */
+#header {
+  background-color: white;
+  box-shadow: 3px 8px 6px #888888;
+  padding-top: 30px;
+}
+
+/* table */
+#middle {
+  margin-top: 40px;
+  text-align: center;
+}
+
+#table {
+  margin-top: 40px;
+}
+
+/* table end */
+
+/*xxxxxxxxxxxxxxxxxxxx Sidebar Styling xxxxxxxxxxxxxxxxxxxx*/
+
+/* User Profile  */
+.user {
+  display: flex;
+}
+
+.sidebar {
+  margin: 0px;
+  padding: 0;
+  width: 260px;
+  background-color: #313131;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  float: left;
+}
+
+/* Sidebar navigation links */
+.sidebar a {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* sidebar navigation link hover effect */
+.sidebar a:hover:not(.active) {
+  color: white;
+}
+
+/* confused what i used this for */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* Making Sidebar responsive for phones */
+/* Max width */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+  .boxs {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* Min width */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+  #logo {
+    padding-top: 0;
+  }
+}
+
+/* Dropdown container (hidden by default) */
+.dropdown-container {
+  display: none;
+  background-color: #313131;
+  padding-left: 8px;
+}
+
+.sidenav a,
+.dropdown-btn {
+  padding: 6px 8px 20px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* FontAwesome ">" icon */
+.fa-caret-right {
+  float: right;
+  padding-right: 0px;
+}
+
+.dropdown-btn {
+  color: white;
+}
+
+#main-category {
+  font-size: 15px;
+}
+
+#main-category:hover {
+  background-color: none;
+}
+
+/*xxxxxxxxxxxxxxxxxxxx ENDS HERE... xxxxxxxxxxxxxxxxxxxx*/
+
+/*===== Sidebar top heading =====*/
+/* Main Category */
+/* Apperance */
+h4 {
+  padding-left: 15px;
+  padding-top: 15px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+/* User-img in topnav */
+#user-img {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
